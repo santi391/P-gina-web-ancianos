@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b45">
+  <title>Mi Primer Negocio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home" aria-label="Ir al inicio">
+      <span class="brand-mark">✦</span>
+      <span>Mi Primer <b>Negocio</b><small>Ideas que se convierten en oportunidades</small></span>
+    </a>
+    <div class="top-actions">
+      <button class="btn btn-light" id="voiceBtn" type="button">🔊 Escuchar</button>
+      <button class="btn btn-light" id="fontBtn" type="button" aria-label="Aumentar texto">A+</button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <p class="nav-label">MENÚ PRINCIPAL</p>
+      <button class="nav-btn active" data-page="home">⌂ <span>Inicio</span></button>
+      <button class="nav-btn" data-page="discover">✦ <span>Encuentra tu negocio</span></button>
+      <button class="nav-btn" data-page="learn">▤ <span>Aprende a emprender</span></button>
+      <button class="nav-btn" data-page="calculator">▦ <span>Calcula tus precios</span></button>
+      <button class="nav-btn" data-page="money">◉ <span>Controla tu dinero</span></button>
+      <button class="nav-btn" data-page="safe">◇ <span>Negocio seguro</span></button>
+      <div class="sidebar-note">
+        <span>💡</span>
+        <b>Un paso a la vez</b>
+        <p>No necesitas comenzar en grande. Una buena idea puede crecer poco a poco.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section id="home" class="page active">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">TU EXPERIENCIA TIENE VALOR</span>
+            <h1>¡Tu próximo capítulo puede ser un negocio!</h1>
+            <p>Descubre una idea, aprende a organizarte y da tus primeros pasos para emprender con confianza.</p>
+            <button class="btn btn-gold" data-go="discover">Encontrar mi idea <span>→</span></button>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="sun"></div><div class="plant">🌱</div><div class="coin">S/</div>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div><span class="eyebrow">EMPIEZA POR AQUÍ</span><h2>¿Qué te gustaría hacer hoy?</h2></div>
+          <p>Elige una opción para continuar.</p>
+        </div>
+        <div class="feature-grid">
+          <button class="feature-card" data-go="discover"><span class="feature-icon mint">💡</span><b>Encuentra tu negocio</b><small>Ideas según tus habilidades e intereses.</small><span class="card-link">Explorar ideas →</span></button>
+          <button class="feature-card" data-go="learn"><span class="feature-icon peach">📚</span><b>Aprende a emprender</b><small>Conoce los primeros pasos para empezar.</small><span class="card-link">Ver lecciones →</span></button>
+          <button class="feature-card" data-go="calculator"><span class="feature-icon gold">🧮</span><b>Calcula tus precios</b><small>Aprende cuánto cobrar por tus productos.</small><span class="card-link">Hacer cálculo →</span></button>
+          <button class="feature-card" data-go="money"><span class="feature-icon blue">💰</span><b>Controla tu dinero</b><small>Registra tus ventas y tus gastos.</small><span class="card-link">Ver mis cuentas →</span></button>
+        </div>
+        <div class="tip-banner"><span>🌟</span><div><b>Recuerda: tu experiencia es tu fortaleza.</b><p>Los conocimientos que has reunido durante años pueden convertirse en el inicio de algo propio.</p></div></div>
+      </section>
+
+      <section id="discover" class="page">
+        <div class="page-heading"><span class="eyebrow">PASO 1 · DESCUBRE</span><h1>Encuentra tu negocio</h1><p>Piensa en lo que sabes hacer, lo que disfrutas y los recursos que tienes a tu alcance.</p></div>
+        <div class="panel">
+          <label for="skill">¿Qué actividad te gustaría realizar?</label>
+          <select id="skill">
+            <option value="cocina">Cocinar o preparar alimentos</option>
+            <option value="manualidades">Tejer o hacer manualidades</option>
+            <option value="plantas">Cuidar plantas o jardinería</option>
+            <option value="servicios">Ofrecer un servicio</option>
+          </select>
+          <button class="btn btn-primary" id="recommendBtn" type="button">Mostrar ideas</button>
+          <div id="ideas" class="results" aria-live="polite"><p class="muted">Selecciona una actividad y descubre algunas ideas para empezar.</p></div>
+        </div>
+        <div class="note-card"><b>Antes de elegir</b><p>Piensa cuánto tiempo tienes, qué materiales ya posees y qué productos o servicios podrían necesitar las personas de tu comunidad.</p></div>
+      </section>
+
+      <section id="learn" class="page">
+        <div class="page-heading"><span class="eyebrow">PASO 2 · PREPÁRATE</span><h1>Aprende a emprender</h1><p>Pequeñas lecciones para comenzar con una base clara.</p></div>
+        <div class="lesson-list">
+          <article class="lesson"><span>01</span><div><h3>Conoce a tus futuros clientes</h3><p>Pregunta a familiares, vecinos o conocidos qué necesitan y cuánto suelen pagar por ello.</p></div></article>
+          <article class="lesson"><span>02</span><div><h3>Empieza con lo que tienes</h3><p>Haz una lista de materiales, herramientas y recursos disponibles antes de comprar algo nuevo.</p></div></article>
+          <article class="lesson"><span>03</span><div><h3>Calcula tus costos</h3><p>Suma los materiales y otros gastos necesarios para preparar cada producto o brindar tu servicio.</p></div></article>
+          <article class="lesson"><span>04</span><div><h3>Da a conocer tu negocio</h3><p>Comparte fotos claras, explica qué ofreces y brinda información sencilla sobre precios y entregas.</p></div></article>
+        </div>
+      </section>
+
+      <section id="calculator" class="page">
+        <div class="page-heading"><span class="eyebrow">PASO 3 · ORGANIZA</span><h1>Calcula tus precios</h1><p>Usa esta herramienta como una guía sencilla para calcular un precio inicial.</p></div>
+        <div class="panel calculator-panel">
+          <label for="productName">Nombre del producto o servicio</label>
+          <input id="productName" type="text" placeholder="Ej. Queque casero">
+          <div class="form-row">
+            <div><label for="cost">Costo por unidad (S/)</label><input id="cost" type="number" min="0" step="0.01" placeholder="Ej. 5.00"></div>
+            <div><label for="profit">Ganancia deseada (S/)</label><input id="profit" type="number" min="0" step="0.01" placeholder="Ej. 3.00"></div>
+          </div>
+          <button class="btn btn-primary" id="calculateBtn" type="button">Calcular precio</button>
+          <div id="calculationResult" class="result-box" aria-live="polite">Tu resultado aparecerá aquí.</div>
+          <p class="small-note">Recuerda incluir todos los costos: materiales, envases, transporte y otros gastos. Compara también tu precio con el mercado.</p>
+        </div>
+      </section>
+
+      <section id="money" class="page">
+        <div class="page-heading"><span class="eyebrow">PASO 4 · LLEVA TUS CUENTAS</span><h1>Controla tu dinero</h1><p>Registra cada ingreso y gasto para entender cómo va tu negocio.</p></div>
+        <div class="summary-grid">
+          <div class="summary-card"><span>Ingresos</span><b id="totalIncome">S/ 0.00</b></div>
+          <div class="summary-card"><span>Gastos</span><b id="totalExpense">S/ 0.00</b></div>
+          <div class="summary-card balance"><span>Balance</span><b id="balance">S/ 0.00</b></div>
+        </div>
+        <div class="panel">
+          <h2>Registrar movimiento</h2>
+          <div class="form-row">
+            <div><label for="movementType">Tipo</label><select id="movementType"><option value="income">Ingreso / venta</option><option value="expense">Gasto / compra</option></select></div>
+            <div><label for="movementAmount">Cantidad (S/)</label><input id="movementAmount" type="number" min="0.01" step="0.01" placeholder="Ej. 15.00"></div>
+          </div>
+          <label for="movementDescription">Descripción</label><input id="movementDescription" type="text" placeholder="Ej. Venta de 3 postres">
+          <button class="btn btn-primary" id="addMovementBtn" type="button">＋ Guardar movimiento</button>
+          <p id="movementMessage" class="status-message" aria-live="polite"></p>
+        </div>
+        <div class="panel"><h2>Movimientos recientes</h2><div id="movementList"><p class="muted">Todavía no hay movimientos registrados.</p></div><button class="btn btn-outline" id="clearMovementsBtn" type="button">Borrar registros</button></div>
+      </section>
+
+      <section id="safe" class="page">
+        <div class="page-heading"><span class="eyebrow">PASO 5 · PROTÉGETE</span><h1>Un negocio seguro</h1><p>Cuida tu dinero, tus datos y tu tranquilidad al emprender.</p></div>
+        <div class="safety-grid">
+          <article class="safety-card"><span>🔐</span><h3>Protege tus claves</h3><p>No compartas contraseñas, códigos de verificación ni datos bancarios por mensajes o llamadas.</p></article>
+          <article class="safety-card"><span>💳</span><h3>Verifica los pagos</h3><p>Comprueba en tu propia aplicación bancaria que el dinero llegó. No te fíes solo de capturas de pantalla.</p></article>
+          <article class="safety-card"><span>🧾</span><h3>Guarda tus comprobantes</h3><p>Registra compras y ventas. Los apuntes te ayudarán a revisar tus cuentas.</p></article>
+          <article class="safety-card"><span>🤝</span><h3>Desconfía de ofertas extrañas</h3><p>Desconfía de quien promete ganancias seguras o te presiona para enviar dinero rápidamente.</p></article>
+        </div>
+      </section>
+
+      <footer>Mi Primer Negocio <span>·</span> Aprende, organiza y emprende a tu ritmo.</footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
